@@ -11,12 +11,12 @@
 makeCacheMatrix <- function(x = matrix()) {
 #y<-matrix(data=x,nrow,ncol,byrow,dimnames)
   y<-x
-  sm=NULL
+  sm<-NULL
   
   get<- function() y
   
   set<- function(x){ y<-x
-                      sm=NULL} 
+                      sm<<-NULL} 
   
   getsolve<-function() sm
     
